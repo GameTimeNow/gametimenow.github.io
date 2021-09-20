@@ -155,7 +155,7 @@ function registerROM() {
     if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
         Iodine.disableAudio();
     }
-
+    Iodine.play();
 }
 function registerBlitterHandler() {
     Blitter = new GlueCodeGfx();
@@ -213,4 +213,3 @@ function removeEvent(sEvent, oElement, fListener) {
         oElement.detachEvent("on" + sEvent, fListener);    //Pity for IE.
     }
 }
-
