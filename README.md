@@ -1,12 +1,7 @@
+# GBA Games Page:
 
-# Game Time Now
+https://jsemu2.github.io/gba
 
-## Description
-A GBA game Site Go play [Here](https://gametimenow.github.io)
-# Contributors
-RexPaster
-# Based Off Of
-[Artymedia Html List ](https://artsymedia.github.io)
+# GBA Emulator Core Used:
 
-[MKGBA Emulator](https://https://github.com/MkGamesdev/MKGBA2.0)
-
+https://github.com/taisel/IodineGBA

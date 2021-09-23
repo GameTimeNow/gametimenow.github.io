@@ -18,7 +18,7 @@ function GameBoyAdvanceEmulator() {
         "timerIntervalRate":16,             //How often the emulator core is called into (in milliseconds).
         "emulatorSpeed":1,                  //Speed multiplier of the emulator.
         "metricCollectionMinimum":30,       //How many cycles to collect before determining speed.
-        "dynamicSpeed":false                 //Whether to actively change the target speed for best user experience.
+        "dynamicSpeed":true                 //Whether to actively change the target speed for best user experience.
     }
     this.audioFound = false;                  //Do we have audio output sink found yet?
     this.loaded = false;                      //Did we initialize IodineGBA?
@@ -224,7 +224,7 @@ GameBoyAdvanceEmulator.prototype.calculateSpeedPercentage = function () {
             if (this.speedCallback) {
                 var metricEnd = new Date();
                 var timeDiff = Math.max(metricEnd.getTime() - this.metricStart.getTime(), 1);
-                var result = ((this.settings.timerIntervalRate * (this.clockCyclesSinceStart | 0) / timeDiff) / (this.CPUCyclesPerIteration | 0)) * 100;
+                var result = ((this.settings.timerIntervalRate * (this.clockCyclesSinceStart | 0) / timeDiff) / (this.CPUCyclesPerIteration | 0)) * 100 * this.settings.emulatorSpeed;
                 this.speedCallback(result.toFixed(2) + "%");
             }
             this.resetMetrics();

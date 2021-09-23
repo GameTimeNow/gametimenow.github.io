@@ -15,7 +15,6 @@
  * GNU General Public License for more details.
  *
  */
-
 var games = {
     "advancewars":"Advance Wars",
     "advancewars2":"Advance Wars 2",
