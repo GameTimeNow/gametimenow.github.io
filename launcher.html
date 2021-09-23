@@ -228,4 +228,18 @@
             <span class="message" id="tempMessage"></span>
         </div>
     </body>
+	 <canvas id="emulator_target" width="240px" height="160px"></canvas>
+        <span id="tempMessage"></span>
+          
+<script>// set interval
+var tid = setInterval(mycode, 30000);
+function mycode() {
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115293259-1');
+}
+function abortTimer() { // to be called when you want to stop the timer
+  clearInterval(tid);
+}
+</script>
 </html>
