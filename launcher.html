@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>GameTimeNow</title>
+	    <title>GameTimeNow</title>
+        <script>
+            document.title = location.hash.substr(1);
+        </script>
 	<script async src="https://arc.io/widget.min.js#Aa7udwzq"></script>
         <meta charset="UTF-8">
 		<meta name="viewport" content="width=160">
@@ -72,6 +75,13 @@
         <div id="container">
             <div id="menu" class="paused">
                 <ul class="menu" id="menu_top">
+                    <li>
+                        File
+                        <ul>
+                            <li><span>BIOS: </span> <input type="file" id="bios_load" class="files"></li>
+                            <li><span>Game: </span> <input type="file" id="rom_load" class="files"></li>
+                        </ul>
+                    </li>
                     <li id="play" class="show">Play</li>
                     <li id="pause" class="hide">Pause</li>
                     <li id="restart">Restart</li>
