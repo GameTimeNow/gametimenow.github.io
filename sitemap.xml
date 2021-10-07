@@ -26,11 +26,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://gametimenow.github.io/launcher.html</loc>
-  <lastmod>2021-10-06T16:40:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://gametimenow.github.io/play/bubblebobble.html</loc>
   <lastmod>2021-10-06T16:40:22+00:00</lastmod>
   <priority>0.80</priority>
@@ -95,11 +90,7 @@
   <lastmod>2021-10-06T16:40:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://gametimenow.github.io/Scared-dots/</loc>
-  <lastmod>2021-09-09T17:19:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+
 
 
 </urlset>
