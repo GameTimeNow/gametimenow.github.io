@@ -1,32 +1,12 @@
-<script async src="https://arc.io/widget.min.js#Aa7udwzq"></script>
-<div id="game" style="width: 640px; height: 527px; visibility: visible;" class="-ce-ignore">
-                        <p id="cinematic_close_container"><a style="display:none" id="cinematic_close_link" class="spritegame textreplace" href="#" onclick="CinematicMode.deactivateCinematicMode(); return false;">close</a></p>
-                          <iframe id="gameiframe" name="gameiframe" scrolling="auto" border="0" frameborder="0" style="width: 640px; height: 480px; position: absolute; top: 23px; left: 0px;" class="dont_hide" allowfullscreen="allowfullscreen"></iframe><script>
-//<![CDATA[
-              gameLoader = {
-          loadGame: function(urlOptions) {
-                  new GameIframe({"auto_resize":null,"iframe_url":'https://game155545.konggames.com/games/FliplineStudios/jacksmith/frame/' + channel_id + '/?kongregate_host=www.kongregate.com',"alternate_game_file_url":null,"game_width":640,"game_height":480,"max_game_width":null,"max_game_height":null,"game_left":0,"game_top":23,"iframe_class":"dont_hide","host":"https://www.kongregate.com","api_host":"https://api.kongregate.com","api_path":"https://chat.kongregate.com/flash/API_AS3_d43c4b859e74432475c1627346078677.swf","preview":false,"game_permalink":"jacksmith","game_id":155545,"game_url":"http://www.kongregate.com/games/FliplineStudios/jacksmith","game_version":1395846151,"flash_var_prefix":"kv_","post_message":true,"iframe_host":"https://game155545.konggames.com","game_host":"https://chat.kongregate.com","channel_id":encodeURIComponent(channel_id),"svid":"dcc31245-3a7c-4add-b0e3-db2a23dc0962","game_type":"flash"}, urlOptions, channel_id).createGameIframeElement();
-
-          }
-        }
-
-      function activateGame(urlOptions) {
-        if (activateGame._alreadyActivated) {
-          Kongregate.Log.warn('Game already activated, ignoring call');
-          return;
-        }
-        activateGame._alreadyActivated = true;
-
-        if (!urlOptions) {
-          urlOptions = '';
-        }
-        gameLoader.loadGame(urlOptions);
-        document.fire('game:activated');
-      };
-
-//]]>
+<script src="https://cdn.getsupernova.com/tags/supernovalauncher.js"></script>
+<script>
+supernova.launch({
+mode: "extensionprompt",
+el: document.querySelector("#game"),
+partnerlogo: "",
+title: "",
+icon: "",
+embedbar: true,
+dropdown: true,
+});
 </script>
-                        <p class="bug_game cinemode_bug_link footnote" id="cinematic_bug_report" style="display: none">
-                          <span id="cinematic_bug_link"><a href="/cinematic_bug_counters/increment?game_id=155545" onclick="$('cinematic_bug_link').hide(); $('cinematic_bug_spinner').show(); new Ajax.Request(this.href, {asynchronous:true, evalScripts:true, onFailure:function(request){new Effect.Highlight('cinematic_bug_report', {startcolor: '#cc2222'});$('cinematic_bug_spinner').hide()}, onSuccess:function(request){$('cinematic_bug_link').update('Thank You!').show(); $('cinematic_bug_spinner').hide()}, parameters:'authenticity_token=' + encodeURIComponent('wx4f9YpIt5du0+W/NtkObfBM3ZfRJekLF4eizOO6Ed1XjzwsrdakVvGl65Cl0n0BlUpVDZ6zvblo5QAKUP3hrw==')}); return false;">Report Cinematic Bug</a></span><span class="spinner" id="cinematic_bug_spinner" style="display: none">...</span>
-                        </p>
-                      </div>
