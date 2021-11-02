@@ -1,22 +1,4 @@
-<script> 
-function showSWF(urlString, elementID){ 
-    var displayContainer = document.getElementById(elementID); 
-    var flash = createSWFObject(urlString, 'opaque', 650, 650); 
-    displayContainer.appendChild(flash); 
-} 
-function createSWFObject(urlString, wmodeString, width, height){ 
-    var SWFObject = document.createElement("object"); 
-    SWFObject.setAttribute("type","application/x-shockwave-flash"); 
-    SWFObject.setAttribute("width","100%"); 
-    SWFObject.setAttribute("height","100%"); 
-    var movieParam = document.createElement("param"); 
-    movieParam.setAttribute("name","movie"); 
-    movieParam.setAttribute("value",urlString); 
-    SWFObject.appendChild(movieParam); 
-    var wmodeParam = document.createElement("param"); 
-    wmodeParam.setAttribute("name","wmode"); 
-    wmodeParam.setAttribute("value",wmodeString); 
-    SWFObject.appendChild(wmodeParam);      
-    return SWFObject; 
-} 
-</script>
+<embed type="application/x-shockwave-flash" 
+   pluginspage="http://www.adobe.com/go/getflashplayer" 
+   width="333" height="333" src="path/flash_movie.swf" />
+<noembed><p>Alternative content</p></noembed>
