@@ -1,12 +1,22 @@
-<XMP>
-   <table width="100%" class="ex" cellspacing="0" border="1"> 
-     <tr> 
-      <td>
-        <object width="550" height="400">
-           <param name="game" value="https://github.com/GameTimeNow/gametimenow.github.io/blob/main/swf/jacksmith.swf?raw=true">
-           <embed src="https://github.com/GameTimeNow/gametimenow.github.io/blob/main/swf/jacksmith.swf?raw=true" width="550" height="400"></embed>
-        </object>
-      </td> 
-     </tr>
-   </table> 
-</XMP>
+<script> 
+function showSWF(urlString, elementID){ 
+    var displayContainer = document.getElementById(elementID); 
+    var flash = createSWFObject(urlString, 'opaque', 650, 650); 
+    displayContainer.appendChild(flash); 
+} 
+function createSWFObject(urlString, wmodeString, width, height){ 
+    var SWFObject = document.createElement("object"); 
+    SWFObject.setAttribute("type","application/x-shockwave-flash"); 
+    SWFObject.setAttribute("width","100%"); 
+    SWFObject.setAttribute("height","100%"); 
+    var movieParam = document.createElement("param"); 
+    movieParam.setAttribute("name","movie"); 
+    movieParam.setAttribute("value",urlString); 
+    SWFObject.appendChild(movieParam); 
+    var wmodeParam = document.createElement("param"); 
+    wmodeParam.setAttribute("name","wmode"); 
+    wmodeParam.setAttribute("value",wmodeString); 
+    SWFObject.appendChild(wmodeParam);      
+    return SWFObject; 
+} 
+</script>
