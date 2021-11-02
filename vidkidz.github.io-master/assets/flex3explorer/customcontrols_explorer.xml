@@ -1,8 +1,0 @@
-
-<?xml version="1.0" encoding="utf-8"?>
-<compTree>
-        <node label="CustomControls">
-						<node label="Spinner" app="customcontrols/SpinnerExample">
-	        	</node>
-	     	</node>
-</compTree>
