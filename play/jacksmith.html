@@ -1,12 +1,15 @@
+<script src="https://cdn.getsupernova.com/tags/supernovalauncher.js"></script>
 <script>
-(function() {
-  var options = {};            
- var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-  s.onload = function() {  supernova.launch(options); }
-  s.src = "https://www.getsupernova.com/tags/supernovalauncher.js";
-  var s2=document.getElementsByTagName('script')[0];
-  s2.parentNode.insertBefore(s, s2);
-}());
+supernova.launch({
+partnerid: 388,
+el: document.querySelector("body"),
+swfurl: "https://github.com/GameTimeNow/gametimenow.github.io/raw/e41235645259f81520f41f5ac4b3c4bf44fccc93/swf/jacksmith.swf",
+flashvars: "",
+title: "Jacksmith",
+icon: "https://cdn.getsupernova.com/images/dungeonpunks_icon.png",
+width: 960,
+height: 540
+});
 </script>
 <body>
 <embed type="application/x-shockwave-flash" 
