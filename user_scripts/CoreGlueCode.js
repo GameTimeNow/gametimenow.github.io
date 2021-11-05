@@ -59,6 +59,7 @@ var games = {
     "megaman_zero4":"Megaman Zero 4",
     "metalslug":"Metal Slug Advance",
     "metroid_fusion":"Metroid Fusion",
+    "metroid_zero":"Metroid Zero",
     "momotarou_dentetsu":"Momotarou Dentetsu G Gold Deck wo Tsukure!",
     "monopoly":"Monopoly",
     "monster_force":"Monster Force",
