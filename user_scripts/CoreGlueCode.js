@@ -64,6 +64,7 @@ var games = {
     "monopoly":"Monopoly",
     "monster_force":"Monster Force",
     "mortal_kombat":"Mortal Kombat Advance",
+    "naruto_ninja":"Naruto Ninja Council",
 	"onepiece":"One Piece",
     "pacman_world":"Pacman World",
     "pacman_world2":"Pacman World 2",
