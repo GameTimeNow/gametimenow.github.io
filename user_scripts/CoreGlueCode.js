@@ -95,6 +95,7 @@ var games = {
     "super_street_fighter_2_turbo_revival":"Super Street Fighter II: Turbo Revival",
     "super_street_fighter_3_alpha":"Super Street Fighter III: Alpha",
     "tales_of_phantasia":"Tales of Phantasia",
+    "tactics_ogre":"Tactics Ogre The Knight Of Lodis",
     "tak2_staff_of_dreams":"Tak 2: The Staff of Dreams",
     "tetris_worlds":"Tetris Worlds",
     "tmnt":"Teenage Mutant Ninja Turtles",
